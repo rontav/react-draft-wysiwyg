@@ -1,7 +1,4 @@
 .storybook
-config
-docs
-stories
 node_modules
 .flowconfig
 .travis.yml
