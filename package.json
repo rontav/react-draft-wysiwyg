@@ -1,6 +1,6 @@
 {
   "name": "react-draft-wysiwyg",
-  "version": "1.14.5",
+  "version": "1.14.5-1",
   "description": "A wysiwyg on top of DraftJS.",
   "main": "dist/react-draft-wysiwyg.js",
   "repository": {
@@ -69,8 +69,7 @@
   },
   "scripts": {
     "clean": "rimraf dist",
-    "build:webpack": "cross-env NODE_ENV=production webpack  --mode production --config config/webpack.config.js",
-    "build": "npm run clean && npm run build:webpack",
+    "build": "npm run clean",
     "test": "cross-env BABEL_ENV=test mocha --require config/test-compiler.js config/test-setup.js src/**/*Test.js",
     "lint": "eslint src",
     "lintdocs": "eslint docs/src",
