@@ -32,9 +32,8 @@ import getMentionDecorators from '../decorators/Mention';
 import getHashtagDecorator from '../decorators/HashTag';
 import getBlockRenderFunc from '../renderer';
 import defaultToolbar from '../config/defaultToolbar';
-import localeTranslations from '../i18n';
+import enLocaleTranslations from '../i18n/en';
 import './styles.css';
-import '../../css/Draft.css';
 
 class WysiwygEditor extends Component {
   constructor(props) {
@@ -430,7 +429,7 @@ class WysiwygEditor extends Component {
       editorState,
       onChange: this.onChange,
       translations: {
-        ...localeTranslations[locale || newLocale],
+        ...enLocaleTranslations,
         ...translations,
       },
     };
